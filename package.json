@@ -1,0 +1,28 @@
+{
+  "name": "vue-demi-demo",
+  "version": "0.0.0",
+  "private": true,
+  "files": ["dist"],
+  "type": "module",
+  "main": "./dist/vue-demi-demo.cjs",
+  "module": "./dist/vue-demi-demo.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-demi-demo.js",
+      "require": "./dist/vue-demi-demo.umd.cjs"
+    }
+  },
+
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.3.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "vite": "^4.3.5"
+  }
+}
